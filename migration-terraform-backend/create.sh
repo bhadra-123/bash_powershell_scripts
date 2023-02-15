@@ -2,10 +2,10 @@
 
 export subscription_id="f5db7161-4296-45e8-96e3-e67567aa1b22"
 export resource_group_name="terraform-storage-backend-rg" 
-export storage_account_name="backendstorage54323265"
-export storage_container_1_name="hub-backend-container"
-export storage_container_2_name="compute-backend-container"
-export storage_container_3_name="spoke-backend-container"
+export storage_account_name="backendstorage63826482"
+export storage_container_1_name="dev-backend-container"
+export storage_container_2_name="qa-backend-container"
+export storage_container_3_name="prod-backend-container"
 
 echo "-----------------------"
 echo  setting up subscripton
