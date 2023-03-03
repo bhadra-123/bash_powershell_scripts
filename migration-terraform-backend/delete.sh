@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export subscription_id="dc87d979-80e5-489a-915e-b5faaf6d62bc"
+export subscription_id="f5db7161-4296-45e8-96e3-e67567aa1b22"
 export resource_group_name="terraform-backend-rg" 
 
 echo "-----------------------"

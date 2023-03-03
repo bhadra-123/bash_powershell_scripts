@@ -3,7 +3,7 @@
 export subscription_id="f5db7161-4296-45e8-96e3-e67567aa1b22"
 export location="eastus"
 export resource_group_name="terraform-backend-rg" 
-export storage_account_name="terraformbackendstac743"
+export storage_account_name="terraformbackendstac744"
 export hub_storage_account_name="hub-stct"
 export spoke_storage_account_name="spoke-stct"
 
