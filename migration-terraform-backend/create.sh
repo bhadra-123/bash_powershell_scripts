@@ -4,8 +4,9 @@ export subscription_id="f5db7161-4296-45e8-96e3-e67567aa1b22"
 export location="eastus"
 export resource_group_name="terraform-backend-rg" 
 export storage_account_name="terraformbackendstac744"
-export hub_storage_account_name="hub-stct"
-export spoke_storage_account_name="spoke-stct"
+export onprem_storage_container_name="onprem-stct"
+export hub_storage_container_name="hub-stct"
+export spoke_storage_container_name="spoke-stct"
 
 echo "-----------------------"
 echo  setting up subscripton
@@ -35,6 +36,8 @@ echo "---------------------------"
 echo  creating storage container
 echo "---------------------------"
 
-az storage container create --name $hub_storage_account_name --account-name $storage_account_name --auth-mode login
+az storage container create --name $onprem_storage_container_name --account-name $storage_account_name --auth-mode login
 
-az storage container create --name $spoke_storage_account_name --account-name $storage_account_name --auth-mode login
+az storage container create --name $hub_storage_container_name --account-name $storage_account_name --auth-mode login
+
+az storage container create --name $spoke_storage_container_name --account-name $storage_account_name --auth-mode login
